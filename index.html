@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: grey;
+        }
+        .outer {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        
+        .innerbox {
+            border-radius: 5px;
+            background: #f1f1f1;
+            margin: 10px;
+            width: 28%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 64px;
+            cursor: pointer;
+        }
+        
+        .note {
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        .unable {
+            cursor: default;
+            background: #B8B8B8;
+        }
+        
+        .winner {
+            font-weight: bold;
+            color: #F93B4E;
+            background: #D0F9A6;
+        }
+        
+        .also {
+            margin: 20px 0 0;
+            position: relative;
+        }
+        
+        button {
+            font-style: italic;
+            font-weight: 500;
+            font-family: sans-serif;
+            position: relative;
+            left: -400px;
+            top: -70px;
+            padding: 7px;
+            font-size: 18px;
+            background: #3673B8;
+            border-color: #3673B8;
+            color: #8EB84F;
+            transition: all 1s;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div class="outer">
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+       <div class="innerbox"></div>
+   </div>
+   <div class="also">
+        <p class="note">ходят крестики</p>
+        <button>Начать заново?</button> 
+   </div>
+   
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
